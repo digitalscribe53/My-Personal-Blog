@@ -1,0 +1,32 @@
+#header-box {
+    width: 100%;
+    height: 100px;
+    border-bottom: solid black 3px;
+    background-color: red;
+    text-align: center;
+}
+
+#left-box {
+    text-align: center;
+    border-right: solid black 1.5px;
+    width: 50%;
+    height: 70vh;
+    background-color: blue;
+    
+}
+
+#right-box {
+    text-align: center;
+    border-left: solid black 1.5px;
+    width: 50%;
+    height: 70vh;
+    background-color: purple;
+    
+    
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
