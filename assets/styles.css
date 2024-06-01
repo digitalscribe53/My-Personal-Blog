@@ -3,12 +3,18 @@
     padding: 0;
 }
 
+h1 {
+    margin-top: 20px;
+}
+
 #header-box {
     width: 100%;
     height: 100px;
     border-bottom: solid black 3px;
-    background-color: rgb(155, 76, 76);
-    text-align: center;
+    background-color: #3d7561;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #left-box {
@@ -16,7 +22,7 @@
     border-right: solid black 1.5px;
     width: 50%;
     height: 70vh;
-    background-color: rgb(112, 112, 201);
+    
     
 }
 
@@ -25,7 +31,7 @@
     border-left: solid black 1.5px;
     width: 50%;
     height: 70vh;
-    background-color: #6e356e;
+    
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -37,6 +43,7 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    background-color: #e1d4d4;
 }
 
 input[type=text] {
@@ -62,7 +69,8 @@ textarea {
 
 input[type=submit] {
     width: 80%;
-    background-color: green;
+    background-color: #3d7561;
+    margin-top: 20px;
     color: white;
     padding: 14px 20px;
     margin: 8px 0 2px 10%;
@@ -78,6 +86,115 @@ input[type=submit] {
     padding-top: 10px;
     
 }
+
+#ball-container {
+    margin: 40px auto;
+    padding-top: 20px;
+    height: 70%;
+    width: 70%;
+}
+
+#ball-design {
+    position: relative;
+    width: 50%;
+    padding-bottom: 50%;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #22c1c3 18%, #f9b82eb0 91%); 
+    margin: auto auto;
+}
+
+#ball-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+/* The box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: gray;
+    margin-right: 40px;
+    border-radius: 18px;
+
+}
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: relative;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    background-color: whitesmoke;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/*not working to change toggle color in dark mode*/
+.slider:after {
+    background-color: black;
+}
+
+/*not working to change toggle color in dark mode*/
+input:checked + .slider {
+    background-color: black;
+}
+
+/*not working*/
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    /*border color not working in dark mode*/
+    border-color: white;
+}
+
+
+
+
+
+
+
 
 
 
