@@ -12,7 +12,7 @@
 <header id="header">
     <div id="header-box">
         <label class="switch">
-            <input type="checkbox" onclick="darkMode()">
+            <input type="checkbox" id="dark-mode" onclick="darkMode()">
             <span class="slider round"></span>
         </label>
     </div>
@@ -30,17 +30,9 @@
                         <h2 id="ball-msg">Hello</h2>
                     </div>
                 </div>
-                
-                
-                
-                
-                
             </div>
-    
-
         
             <div id="right-box">
-                
                 <h2>What's on your mind?</h2>
                 <form id="form">
                     <label for="username"><span class="form-caption">Username</span></label>
@@ -51,18 +43,15 @@
                     <label for="blog-text"></label>
                     <textarea id="blog-text" name="blog-text" rows="4" cols="50">
                     </textarea>
-                    <input onclick="saveText()" type="button" id="submit-btn"> 
-            
+                    <input onclick="loadBlog()" type="button" id="submit-btn" value="Submit"> 
                 </form>
             </div>
         </div>
-            
-
-
-
-
 
     </main>
+    <footer id="footer">
+        Made by Kent Ball, 2024
+    </footer>
 <script src="./assets/script.js"></script>
 </body>
 
