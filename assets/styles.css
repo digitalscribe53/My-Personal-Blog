@@ -209,6 +209,12 @@ input:checked + .slider:before {
     padding-top: 20px;
 }
 
+#msg-box {
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+}
+
 
 
 

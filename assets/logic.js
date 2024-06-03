@@ -1,4 +1,40 @@
-function darkMode () {
+/* when the form submits, we check if all three input fields are entered. 
+   if not, we ask the user to complete all the fields before submitting.
+   Else if the user submits all three inputs, then we save the inputs to localStorage.
+   The blog page should render the blog posts from localStorage, 
+   so that the user can go back and type more blog posts and on submit
+   they will be posted below the user's previous posts.
+   We will store the blog posts as objects in a JSON array.*/
+
+
+document.getElementById("submit-btn").onclick = function() {
+   /*
+   const allFilled = true;
+   const userName = document.getElementById("username");
+   const title = document.getElementById("title");
+   const blogText = document.getElementById("blog-text");
+   
+   if (userName.value === null || title.value === null || blogText.value === null) 
+      */
+      alert("Please fill in all the fields.");
+   
+
+}
+   /*
+   const message = ("Please enter a Username, Title and Content before clicking Submit.");
+   const msgBox = document.getElementById("warning-msg");
+   const userName = document.getElementById("username");
+   const title = document.getElementById("title");
+   const blogText = document.getElementById("blog-text");
+   
+   if (userName.value === null || title.value === null || blogText.value === null) {
+      
+      document.msgBox.innerHTML = message;
+   } 
+} */
+
+   
+function darkMode() {
    
    let leftBox = document.getElementById("left-box");
    let rightBox = document.getElementById("right-box");
@@ -25,8 +61,11 @@ let blogPosts = [];
 
  /* Load the Blog Posts page when submit btn is clicked */
 function loadBlog() {
+   
    window.location = "./blog.html";
-   window.onload = function() {
+   
+   
+   window.onload = function() {   
       let userName = localStorage.getItem('username');
       if (userName != "undefined" || userName != "null") {
          document.getElementById('first-article').innerHTML = userName;
