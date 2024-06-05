@@ -70,12 +70,15 @@ input[type=text] {
 
 textarea {
     width: 80%;
-    padding: 14px 20px;
+    
     margin: 8px 0 2px 10%;
     box-sizing: border-box;
     display: inline-block;
     border: none;
     border-radius: 4px;
+    resize: vertical;
+    min-height: 30px;
+    max-height: 250px;
     
 }
 

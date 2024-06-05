@@ -6,7 +6,7 @@
 
 article {
     width: 90%;
-    height: 20%;
+    min-height: 90%;
     padding: 10px;
     border: 2px solid black;
     border-radius: 4px;
@@ -27,9 +27,11 @@ article {
     color: white;
 }
 
+/*
 .dark-borders {
     border-bottom-color: white;
 }
+*/
 
 #header-box {
     width: 100%;
