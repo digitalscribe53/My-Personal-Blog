@@ -7,32 +7,64 @@
    We will store the blog posts as objects in a JSON array.*/
 
 
-   const submitBtn = document.getElementById('form');
+   const submitForm = document.getElementById('form');
    const userName = document.getElementById("username");
    const title = document.getElementById("title");
    const blogText = document.getElementById("blog-text");
-   
+   const submitBtn = document.getElementById("submit-btn");
+   postsArray = [];
 
-if (submitBtn) {
+if (submitForm) {
    
 
 
 // change event
-submitBtn.addEventListener('click', function (event) {
+submitForm.addEventListener('click', function (event) {
    event.preventDefault();
-   
+   //let btnClick = event.currentTarget;
+
+
+   if (event.target = submitBtn) {
    if (userName.value === '' || title.value === '' || blogText.value === '') {
       
       alert("Please fill in all the fields.");
    } else { 
-      const user = {
+      /*const user = {
          username: userName.value,
          title: title.value,
          content: blogText.value
       }
-      
-      localStorage.setItem("user", JSON.stringify(user));
+      */
 
+      let retrievedArray = localStorage.getItem('postsArray');
+      let parsedRetrievedArray = JSON.parse(retrievedArray);
+      
+      postsArray = parsedRetrievedArray;
+      
+      
+
+
+      postsArray.push({username: userName.value, title: title.value, content: blogText.value});
+      console.log(postsArray);
+
+      let stringifiedPostsArray = JSON.stringify(postsArray);
+      localStorage.setItem('postsArray', stringifiedPostsArray);
+
+      //localStorage.getItem("postsArray", JSON.parse(postsArray));
+      
+      
+
+      // localStorage.getItem(postsArray) EACH TIME MAIN LOADS
+      // THEN LISTEN FOR CLICK AND PUSH VALUES TO ARRAY AGAIN 
+
+      
+
+      //localStorage.setItem("user", JSON.stringify(user));
+
+      /* for each time the submit btn is clicked, push the current iteration of values to the array in localStorage.*/
+      //for (let i = 0; i < postsArray.length; i++) {
+         
+      //}
 
 
 
@@ -46,8 +78,10 @@ submitBtn.addEventListener('click', function (event) {
       
       
    }  
+}
 });
 }
+
 /*
 document.getElementById("submit-btn").onclick = function() {
    /*
