@@ -82,7 +82,7 @@ textarea {
     
 }
 
-input[type=button] {
+input[type=submit] {
     width: 80%;
     background-color: #3d7561;
     color: white;
