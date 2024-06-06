@@ -2,8 +2,17 @@ function loadBlog() {
    
     //window.location = "./blog.html";
     const firstArticle = document.getElementById("first-article");
-    //const userParsed = JSON.parse("user");
-    firstArticle.textContent = localStorage.getItem("user");
+    const userObject = localStorage.getItem("user");
+    
+    const userParsed = JSON.parse(userObject);
+    console.log(userParsed);
+    firstArticle.innerText = userParsed.title + "\nby: " + userParsed.username + "\n" + userParsed.content;
+    for (i = 0; i < userParsed.length; i++) {
+      firstArticle.textContent = userParsed.username;
+    }
+    
+    
+
      }   
 
   loadBlog();

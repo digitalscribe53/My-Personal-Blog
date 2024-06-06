@@ -36,7 +36,7 @@ submitBtn.addEventListener('click', function (event) {
 
 
 
-      const stringifiedUser = JSON.stringify(user);
+      //const stringifiedUser = JSON.stringify(user);
       
       window.location = "./blog.html";
       
