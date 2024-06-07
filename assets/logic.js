@@ -22,7 +22,7 @@ submitForm.addEventListener('submit', function (event) {
    
 
    
-   //if (event.target = submitBtn) {
+   
    if (userName.value === '' || title.value === '' || blogText.value === '') {
       
       alert("Please fill in all the fields.");
@@ -43,7 +43,6 @@ submitForm.addEventListener('submit', function (event) {
       
       window.location = "./blog.html";
    }  
-//}
 });
 }
 
