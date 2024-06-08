@@ -8,7 +8,7 @@ This project challenged me to apply everything I have learned so far, while also
 The index.html file is intended to run in a browser. 
 
 ## Link to Live Page 
-![link](https://digitalscribe53.github.io/My-Personal-Blog/) 
+[link](https://digitalscribe53.github.io/My-Personal-Blog/)
 
 ![image](/assets/images/My-Blog-snip.JPG "My Blog screenshot")
 
