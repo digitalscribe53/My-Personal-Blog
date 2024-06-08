@@ -145,6 +145,7 @@ input[type=submit] {
     height: 0;
 }
 
+/* Animate dark mode slider with transition */
 .slider {
     position: relative;
     cursor: pointer;
@@ -167,21 +168,6 @@ input[type=submit] {
     transition: .4s;
 }
 
-/*not working to change toggle color in dark mode*/
-.slider:after {
-    background-color: black;
-}
-
-/*not working to change toggle color in dark mode*/
-input:checked + .slider {
-    background-color: black;
-}
-
-/*not working*/
-input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-
 input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
@@ -198,13 +184,11 @@ input:checked + .slider:before {
     margin-left: 4px;
 }
 
-
 .dark-mode {
     background-color: black;
     color: white;
     border-color: white;
 }
-
 
 #footer {
     width: 100%;
@@ -240,8 +224,4 @@ input:checked + .slider:before {
   }
 
 
-
-
-
-
-
+  
