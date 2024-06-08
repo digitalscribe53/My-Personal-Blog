@@ -1,9 +1,8 @@
+/* Remove default browser margins and padding */
 * {
     margin: 0;
     padding: 0;
 }
-
-/* ADD FONT STYLES */ 
 
 h1, h2 {
     margin-top: 20px;
@@ -16,8 +15,6 @@ h2 {
 body {
     background-color: #3d7561;
 }
-
-
 
 #header-box {
     width: 100%;
