@@ -1,0 +1,224 @@
+/* Remove default browser margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #3d7561;
+}
+
+#header-box {
+    width: 100%;
+    height: 100px;
+    border-bottom: solid black 3px;
+    background-color: #3d7561;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#left-box {
+    text-align: center;
+    border-right: solid black 1.5px;
+    width: 50%;
+    height: 80vh;
+    
+    
+}
+
+#right-box {
+    
+    border-left: solid black 1.5px;
+    width: 50%;
+    height: 80vh;
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#right-box h2 {
+    margin-left: 20px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #e1d4d4;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 14px 20px;
+    margin: 8px 0 2px 10%;
+    box-sizing: border-box;
+    display: block;
+    border: none;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 80%;
+    
+    margin: 8px 0 2px 10%;
+    box-sizing: border-box;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 30px;
+    max-height: 250px;
+    
+}
+
+input[type=submit] {
+    width: 80%;
+    background-color: #3d7561;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0 20px 10%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+}
+
+.form-caption {
+    margin-left: 10%;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding-top: 10px;
+    
+}
+
+#ball-container {
+    margin: 40px auto;
+    padding-top: 20px;
+    height: 70%;
+    width: 70%;
+}
+
+#ball-design {
+    position: relative;
+    width: 50%;
+    padding-bottom: 50%;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #22c1c3 18%, #f9b82eb0 91%); 
+    margin: auto auto;
+}
+
+#ball-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+/* The box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: gray;
+    margin-right: 40px;
+    border-radius: 18px;
+
+}
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Animate dark mode slider with transition */
+.slider {
+    position: relative;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    background-color: whitesmoke;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+#footer {
+    width: 100%;
+    height: 50px;
+    background-color: #3d7561;
+    text-align: center;
+    border-top: 3px solid black;
+    padding-top: 20px;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#msg-box {
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+}
+
+.noto-sans-font {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+
+  

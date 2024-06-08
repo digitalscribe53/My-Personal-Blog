@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>My Blog</title>
+    <!--Load some Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+
+</head>
+
+<header id="header">
+    <div id="header-box">
+        <label class="switch">
+            <input type="checkbox" id="dark-mode" onclick="darkMode()">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    
+</header>
+
+<body>
+
+    <main>
+        <div id="container">
+            <div id="left-box">
+                <h1 class="noto-sans-font">My First Blog</h1>
+                <div id="ball-container">
+                    <div id="ball-design">
+                        <h2 id="ball-msg" class="noto-sans-font">Hello</h2>
+                    </div>
+                </div>
+                <div id="msg-box">
+                    <p id="warning-msg"></p>
+                </div>
+            </div>
+        
+            <div id="right-box">
+                <h2 class="noto-sans-font">What's on your mind?</h2>
+                <form id="form">
+                    <label for="username"><span class="form-caption noto-sans-font">Username</span></label>
+                    <input type="text" id="username" name="username">
+                    <label for="title"><span class="form-caption noto-sans-font">Title</span></label>
+                    <input type="text" id="title" name="title">
+                    <h3 class="form-caption noto-sans-font">Content</h3>
+                    <label for="blog-text"></label>
+                    <textarea id="blog-text" name="blog-text" rows="4" cols="50">
+                    </textarea>
+                    <input type="submit" id="submit-btn" value="Submit" class="noto-sans-font"> 
+                </form>
+            </div>
+        </div>
+
+    </main>
+        
+        <footer id="footer">
+            <a href="https://digitalscribe53.github.io/My-Portfolio/" target="_blank">Made by Kent Ball, 2024</a>
+        </footer>
+      
+    
+    <script src="./assets/logic.js"></script>
+</body>
+
+</html>
