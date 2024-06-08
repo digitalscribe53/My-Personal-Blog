@@ -7,3 +7,11 @@ This project challenged me to apply everything I have learned so far, while also
 ## Usage 
 The index.html file is intended to run in a browser. 
 
+## Link to Live Page 
+
+![image](/assets/images/My-Blog-snip.JPG "My Blog screenshot")
+
+
+
+
+
