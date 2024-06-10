@@ -5,7 +5,8 @@
    const blogText = document.getElementById("blog-text");
    const submitBtn = document.getElementById("submit-btn");
    postsArray = [];
-   
+ 
+if (submitBtn) {   
 // Listen for a change event to begin function 
 submitForm.addEventListener('submit', function (event) {
    event.preventDefault();
@@ -33,6 +34,7 @@ submitForm.addEventListener('submit', function (event) {
       window.location = "./blog.html";
    }  
 });
+}
  
 function darkMode() {
    
