@@ -19,7 +19,7 @@ submitForm.addEventListener('submit', function (event) {
       // Get the array of blog post objects from localStorage 
       let retrievedArray = localStorage.getItem('postsArray');
       // Convert from string to type array
-      let parsedRetrievedArray = JSON.parse(retrievedArray);
+      let parsedRetrievedArray = JSON.parse(retrievedArray) || [];
       
       postsArray = parsedRetrievedArray;
       // Push the current form values to the posts array
